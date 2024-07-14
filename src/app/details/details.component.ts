@@ -14,7 +14,7 @@ import { ActivatedRoute } from '@angular/router'; //  ActivateRoute is the route
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent {
-  route: ActivatedRoute  = inject(ActivatedRoute); //injecting the route 
+  route: ActivatedRoute  = inject(ActivatedRoute); 
   housingLocationId = 0;
 
   constructor() {
