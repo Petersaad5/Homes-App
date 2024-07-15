@@ -26,6 +26,8 @@ export class HomeComponent {
   housingService: HousingService = inject(HousingService); // equivalent d'appel de constructeur
 
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();//Populating the Housing locations
+    this.housingService.getAllHousingLocations().then((housingLocationList:HousingLocation[]) => {
+      this.housingLocationList=housingLocationList; // then used to assign housing location list of the page to  what is returned by the function
+    });
   }
 }
