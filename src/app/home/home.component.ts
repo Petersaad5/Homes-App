@@ -20,7 +20,7 @@ import { HousingService } from '../housing.service';
   `,
   styleUrls: ['./home.component.css']
   
-})
+}) 
 export class HomeComponent {
   housingLocationList: HousingLocation[] = [];
   housingService: HousingService = inject(HousingService); // equivalent d'appel de constructeur
